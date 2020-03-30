@@ -1,0 +1,13 @@
+<div class="container">
+  <div id="question" class="card">
+    <p><%= params[:ask].capitalize %></p>
+    <p><em>-You</em></p>
+  </div>
+
+  <div id="answer-card" class="card">
+    <p><b><%= @answer %></b></p>
+    <p><em>-Your coach</em></p>
+  </div>
+</div>
+
+<%= link_to "Ask another question", ask_path %>
